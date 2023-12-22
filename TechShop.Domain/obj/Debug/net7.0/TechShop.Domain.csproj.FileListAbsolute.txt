@@ -1,0 +1,15 @@
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\bin\Debug\net7.0\TechShop.Domain.deps.json
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\bin\Debug\net7.0\TechShop.Domain.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\bin\Debug\net7.0\TechShop.Domain.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\bin\Debug\net7.0\TechShop.Domain.Core.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\bin\Debug\net7.0\TechShop.Domain.Core.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.csproj.AssemblyReference.cache
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.AssemblyInfoInputs.cache
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.AssemblyInfo.cs
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.csproj.CopyComplete
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\refint\TechShop.Domain.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\TechShop.Domain.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Domain\obj\Debug\net7.0\ref\TechShop.Domain.dll

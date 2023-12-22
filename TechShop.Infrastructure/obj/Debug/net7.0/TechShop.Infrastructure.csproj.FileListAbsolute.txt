@@ -1,0 +1,17 @@
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Infrastructure.deps.json
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Infrastructure.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Infrastructure.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Domain.Core.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Domain.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Domain.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\bin\Debug\net7.0\TechShop.Domain.Core.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.AssemblyInfo.cs
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.csproj.CopyComplete
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\refint\TechShop.Infrastructure.dll
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\TechShop.Infrastructure.pdb
+C:\Users\sahin\source\repos\TechShop\TechShop.Infrastructure\obj\Debug\net7.0\ref\TechShop.Infrastructure.dll
