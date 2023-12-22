@@ -33,6 +33,7 @@ namespace TechShop.Application.Services.Abstract
         public async Task<List<Gpu>> GetAllGPUs()
         {
             var gpus = await _dbcontext.GPUs.ToListAsync();
+          
             return gpus;
         }
 

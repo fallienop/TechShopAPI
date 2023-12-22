@@ -16,7 +16,7 @@ namespace TechShop.Domain.Entities
         public string Battery { get; set; }
         public int? GpuId { get; set; }
         public byte[]? ImageData { get;set; }
-        public string Storage { get; set;}
+        public string Storage { get; set;}  
 
         public int Id { get; set; }
         public string? Name { get; set; }

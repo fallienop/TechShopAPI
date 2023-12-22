@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TechShop.Application.Services.Interface;
+using TechShop.Domain.Entities;
 
 namespace TechShopAPI.Controllers
 {
@@ -19,8 +20,12 @@ namespace TechShopAPI.Controllers
         public async Task<IActionResult> GetAllGPUs()
         {
             var data=await _service.GetAllGPUs();
+            var g = data.Select(x => x.Name).ToList();
+            Console.WriteLine(string.Join("\n",g));
             return Ok(data);
         }
+
+    
 
         [HttpGet("/cpu")]
         public async Task<IActionResult> GetAllCPUs()
@@ -77,5 +82,36 @@ namespace TechShopAPI.Controllers
             var data = await _service.GetAllGamingAccesories();
             return Ok(data);
         }
+
+
+
+
+        [HttpGet("/gpuidnames/{id}")]
+        public async Task<IActionResult> GetAllGPUnames(int id)
+        {
+            var data = await _service.GetAllGPUs();
+            var name = data.Find(x => x.Id == id)?.Name;
+
+            return Ok(name);
+        }
+
+        [HttpGet("/cpuidnames/{id}")]
+        public async Task<IActionResult> GetAllCPUnames(int id)
+        {
+            var data = await _service.GetAllCPUs();
+            var name = data.Find(x=>x.Id==id)?.Name;
+
+            return Ok(name);
+        }
+
+        [HttpGet("/screenidnames/{id}")]
+        public async Task<IActionResult> GetAllScreenNames(int id)
+        {
+            var data = await _service.GetAllMonitors();
+            var description = data.Find(x => x.Id == id)?.Description;
+
+            return Ok(description);
+        }
+
     }
 }
