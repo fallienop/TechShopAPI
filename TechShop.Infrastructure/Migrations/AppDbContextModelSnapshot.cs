@@ -83,6 +83,9 @@ namespace TechShop.Infrastructure.Migrations
                     b.Property<decimal>("Speed")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("TDP")
+                        .HasColumnType("int");
+
                     b.Property<byte>("Threads")
                         .HasColumnType("tinyint");
 
@@ -101,6 +104,9 @@ namespace TechShop.Infrastructure.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -129,6 +135,9 @@ namespace TechShop.Infrastructure.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -167,6 +176,9 @@ namespace TechShop.Infrastructure.Migrations
 
                     b.Property<string>("Color")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CpuId")
@@ -218,6 +230,9 @@ namespace TechShop.Infrastructure.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("CpuId")
                         .HasColumnType("int");
 
@@ -259,6 +274,9 @@ namespace TechShop.Infrastructure.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CpuId")
                         .HasColumnType("int");
@@ -309,6 +327,9 @@ namespace TechShop.Infrastructure.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");

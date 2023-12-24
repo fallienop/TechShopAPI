@@ -24,6 +24,7 @@ namespace TechShop.Domain.Entities
         public string? Description { get; set; }
         public decimal? Price { get; set; }
         public int CategoryId { get; set; }
+        public int TDP { get; set; }
         public byte[]? ImageData { get; set; }
 
     }

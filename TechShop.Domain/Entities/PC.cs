@@ -8,7 +8,9 @@ namespace TechShop.Domain.Entities
 {
     public class PC:IProduct
     {
-       
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Company { get; set; }
         public int CpuId { get; set; }
         
         public string MotherBoard { get; set; }
@@ -20,10 +22,10 @@ namespace TechShop.Domain.Entities
         public byte[]? ImageData { get; set; }
 
         public int? GpuId { get; set; }
-        public int Id              { get ; set ; }
-        public string? Name        { get ; set ; }
+       
         public string? Description { get ; set ; }
         public decimal? Price      { get ; set ; }
         public int CategoryId      { get ; set ; }
+    
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TechShop.Application.Services.Interface;
 using TechShop.Domain.Entities;
 
@@ -16,6 +17,18 @@ namespace TechShopAPI.Controllers
             _service = service;
         }
 
+        [HttpGet("/getbysearch/{searchTerm}")]
+        public async Task<IActionResult> Search(string searchTerm)
+        {
+            var data = await _service.GetBySearch(searchTerm);
+            //foreach(var item in data) { 
+            //Console.WriteLine(item);
+            //}
+          
+            return Ok(data);
+        }
+
+
         [HttpGet("/gpu")]
         public async Task<IActionResult> GetAllGPUs()
         {
@@ -25,7 +38,14 @@ namespace TechShopAPI.Controllers
             return Ok(data);
         }
 
-    
+        [HttpGet("/gpu/{id}")]
+        public async Task<IActionResult> GetGPUById(int id)
+        {
+            var data = await _service.GetGPUById(id);
+            return Ok(data);
+        }
+
+
 
         [HttpGet("/cpu")]
         public async Task<IActionResult> GetAllCPUs()
@@ -33,11 +53,25 @@ namespace TechShopAPI.Controllers
             var data = await _service.GetAllCPUs();
             return Ok(data);
         }
+        [HttpGet("/cpu/{id}")]
+        public async Task<IActionResult> GetCPUById(int id)
+        {
+            var data = await _service.GetCPUById(id);
+            return Ok(data);
+        }
+
 
         [HttpGet("/laptop")]
         public async Task<IActionResult> GetAllLaptops()    
         {
             var data = await _service.GetAllLaptops();
+            return Ok(data);
+        }
+
+        [HttpGet("/laptop/{id}")]
+        public async Task<IActionResult> GetLaptopById(int id)
+        {
+            var data = await _service.GetLaptopById(id);
             return Ok(data);
         }
 
@@ -48,10 +82,26 @@ namespace TechShopAPI.Controllers
             return Ok(data);
         }
 
+        [HttpGet("/pc/{id}")]
+        public async Task<IActionResult> GetPCById(int id)
+        {
+            var data = await _service.GetPCById(id);
+            return Ok(data);
+        }
+
+
         [HttpGet("/screen")]
         public async Task<IActionResult> GetAllMonitors()
         {
             var data = await _service.GetAllMonitors();
+            return Ok(data);
+        }
+
+
+        [HttpGet("/screen/{id}")]
+        public async Task<IActionResult> GetScreenById(int id)
+        {
+            var data = await _service.GetScreenById(id);
             return Ok(data);
         }
 
@@ -70,16 +120,29 @@ namespace TechShopAPI.Controllers
             return Ok(data);
         }
 
-        [HttpGet("/mobile")]
+        [HttpGet("/phone")]
         public async Task<IActionResult> GetPhones()
         {
             var data = await _service.GetAllPhones();
             return Ok(data);
         }
+        [HttpGet("/phone/{id}")]
+        public async Task<IActionResult> GetPhoneById(int id)
+        {
+            var data = await _service.GetPhoneById(id);
+            return Ok(data);
+        }
+
         [HttpGet("/gaming")]
         public async Task<IActionResult> GetGamingAccesories()
         {
             var data = await _service.GetAllGamingAccesories();
+            return Ok(data);
+        }
+        [HttpGet("/gaming/{id}")]
+        public async Task<IActionResult> GetGamingAccesoryById(int id)
+        {
+            var data = await _service.GetGamingById(id);
             return Ok(data);
         }
 
@@ -91,15 +154,14 @@ namespace TechShopAPI.Controllers
         {
             var data = await _service.GetAllGPUs();
             var name = data.Find(x => x.Id == id)?.Name;
-
             return Ok(name);
         }
 
         [HttpGet("/cpuidnames/{id}")]
-        public async Task<IActionResult> GetAllCPUnames(int id)
+        public async Task<IActionResult> GetAllCPUnames(int id)                                 
         {
             var data = await _service.GetAllCPUs();
-            var name = data.Find(x=>x.Id==id)?.Name;
+            var name = data.Find(x=>x.Id==id)?.Name;    
 
             return Ok(name);
         }
@@ -113,5 +175,6 @@ namespace TechShopAPI.Controllers
             return Ok(description);
         }
 
+      
     }
 }
