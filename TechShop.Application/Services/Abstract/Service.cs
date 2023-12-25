@@ -10,6 +10,7 @@ using TechShop.Application.Models;
 using TechShop.Application.Services.Interface;
 using TechShop.Domain.Entities;
 using TechShop.Infrastructure;
+using TechShop.Infrastructure.Migrations;
 using TechShopAPI.Models;
 
 namespace TechShop.Application.Services.Abstract
@@ -36,6 +37,18 @@ namespace TechShop.Application.Services.Abstract
 
             var cpu = await _dbcontext.CPUs.FindAsync(id);
             return cpu;
+        }
+
+        public async Task<List<Accessories>> GetAllAccessories()
+        {
+            var accessories = await _dbcontext.Accessories.ToListAsync();
+            return accessories;
+        }
+
+        public async Task<Accessories> GetAccessoryById(int id)
+        {
+            var accessory = await _dbcontext.Accessories.FindAsync(id);
+            return accessory;
         }
 
 
@@ -110,6 +123,7 @@ namespace TechShop.Application.Services.Abstract
             var PCs = await _dbcontext.PCs.ToListAsync();
             var phones = await _dbcontext.Phones.ToListAsync();
             var gamingaccesory = await _dbcontext.Gaming.ToListAsync();
+            var accesories = await _dbcontext.Accessories.ToListAsync();
 
             var alldatamodel = new AllDatasModel
             {
@@ -119,7 +133,8 @@ namespace TechShop.Application.Services.Abstract
                 Screen = monitors,
                 PC = PCs,
                 Phones = phones,
-                Gaming=gamingaccesory
+                Gaming=gamingaccesory,
+                Accessory=accesories
             };
             return alldatamodel;
         }   
@@ -156,6 +171,7 @@ namespace TechShop.Application.Services.Abstract
             var PCs = await _dbcontext.PCs.ToListAsync();
             var phones = await _dbcontext.Phones.ToListAsync();
             var gamingaccesory = await _dbcontext.Gaming.ToListAsync();
+            var accesories = await _dbcontext.Accessories.ToListAsync();
 
             var alldatamodel = new AllDatasModel
             {
@@ -165,7 +181,9 @@ namespace TechShop.Application.Services.Abstract
                 Screen = monitors,
                 PC = PCs,
                 Phones = phones,
-                Gaming = gamingaccesory
+                Gaming = gamingaccesory,
+                Accessory = accesories
+
             };
 
             Type myType = alldatamodel.GetType();
@@ -211,17 +229,6 @@ namespace TechShop.Application.Services.Abstract
             return value != null && value.IndexOf(search, StringComparison.OrdinalIgnoreCase) >= 0;
         }
 
- 
-
-       
      
-
-       
-     
-
-       
-
-        
-
     }
 }

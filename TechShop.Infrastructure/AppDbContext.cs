@@ -24,6 +24,7 @@ namespace TechShop.Infrastructure
         public    DbSet<Screen>  Screens { get; set; }
         public    DbSet<MobilePhones>       Phones { get; set; }
         public    DbSet<GamingAccessories>  Gaming { get; set; }
+        public    DbSet<Accessories> Accessories { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -39,6 +40,7 @@ namespace TechShop.Infrastructure
             modelBuilder.Entity<Cpu>().Property(x => x.Price).HasColumnType("decimal(18,2)");
             modelBuilder.Entity<MobilePhones>().Property(x => x.Price).HasColumnType("decimal(18,2)");
             modelBuilder.Entity<GamingAccessories>().Property(x => x.Price).HasColumnType("decimal(18,2)");
+            modelBuilder.Entity<Accessories>().Property(x => x.Price).HasColumnType("decimal(18,2)");
            
            
            

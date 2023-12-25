@@ -17,6 +17,9 @@ namespace TechShop.Application.Services.Interface
         Task<List<Cpu>> GetAllCPUs();
         Task<Cpu> GetCPUById(int id);
 
+        Task<List<Accessories>> GetAllAccessories();
+        Task<Accessories> GetAccessoryById(int id);
+
         Task<List<Laptop>> GetAllLaptops();
         Task<Laptop> GetLaptopById(int id);
 

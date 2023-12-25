@@ -11,5 +11,6 @@ namespace TechShopAPI.Models
         public List<Screen> Screen { get; set; }
         public List<MobilePhones> Phones { get; set; }
          public List<GamingAccessories> Gaming { get; set; }
+         public List<Accessories> Accessory { get; set; }
     }
 }

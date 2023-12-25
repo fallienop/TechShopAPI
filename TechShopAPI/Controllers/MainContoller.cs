@@ -146,6 +146,19 @@ namespace TechShopAPI.Controllers
             return Ok(data);
         }
 
+        [HttpGet("/accessories/")]
+        public async Task<IActionResult> GetAccesories()
+        {
+            var data = await _service.GetAllAccessories();
+            return Ok(data);
+        }
+        [HttpGet("/accessories/{id}")]
+        public async Task<IActionResult> GetAccesoryById(int id)
+        {
+            var data = await _service.GetAccessoryById(id);
+            return Ok(data);
+        }
+
 
 
 
